@@ -10,6 +10,9 @@ module.exports = {
       // listen_timeout: 50000, // ready 이벤트를 기다릴 시간값(ms)을 의미
       // kill_timeout: 5000, // 새로운 요청을 더 이상 받지 않고 연결되어 있는 요청이 완료된 후 해당 프로세스를 강제로 종료하도록 처리
       watch: true, // watch 여부
+      // watch: ["server", "client"], // 감시할 폴더 설정
+			// watch_delay: 1000, watch 딜레이 인터벌
+			// ignore_watch: ["node_modules", "client/img"] // watch 제외 대상
       env: {
         // 실행 시 환경 변수 설정
         PORT: 4300,
